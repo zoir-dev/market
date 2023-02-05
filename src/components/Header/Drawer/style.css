@@ -1,0 +1,57 @@
+.drawer_div {
+  width: 600px;
+  padding: 20px 30px;
+  height: auto;
+}
+.drawer_dark {
+  background-color: #2a303c;
+  height: auto;
+  color: white;
+}
+.drawer_close_button {
+  display: flex;
+  justify-content: right;
+  padding: 10px 0;
+}
+.bought_maps{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: auto;
+    padding-bottom: 30px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+.dark_bought_maps{
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+.bought_map{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bought_map img{
+    width: 40px;
+}
+.bought_map .bought_title{
+    font-weight: 500;
+    width: 60%;
+    text-align: center;
+}
+.bought_map p{
+    font-weight: 600;
+}
+
+.money_div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.money_div p{
+    font-size: 25px;
+}
+.money_div p:last-child{
+    font-size: 20px;
+    font-weight: 600;
+}

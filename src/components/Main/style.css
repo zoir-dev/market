@@ -1,0 +1,154 @@
+.main_div {
+  padding: 100px;
+  text-align: center;
+}
+.main_div h1 {
+  font-size: 50px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+.dark_main_div h1 {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+.filter_div {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.filter_div button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: #1976d2;
+  background-color: transparent;
+  border: 2px solid #1976d2;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.products_div {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 30px;
+  margin-top: 80px;
+}
+
+.product_div {
+  position: relative;
+  padding: 20px 0;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.dark_product_div {
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+.about_div {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  background: white;
+  padding: 30px;
+  top: 0;
+  bottom: 0;
+  transform: rotateX(90deg);
+  transition: 0.3s ease all;
+  border-radius: 10px;
+}
+.open_about_div {
+  transform: rotateX(0deg);
+  transition: 0.3s ease all;
+}
+.dark_open_about_div {
+  background-color: #2a303c;
+  color: white;
+  border-radius: 10px;
+}
+.about_div h3 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.about_div .absolute_price {
+  display: block;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 20px;
+}
+.about_div span {
+  font-size: 20px;
+}
+.rating_div {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  font-weight: 600;
+}
+.absolute_buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.absolute_buttons button {
+  padding: 3px 10px !important;
+}
+.absolute_buttons button:first-child {
+  color: red;
+  border-color: red;
+}
+.product_div img {
+  width: 70%;
+  height: fit-content;
+  margin-bottom: 20px;
+  object-fit: contain;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: transparent;
+}
+.product_div p {
+  display: block;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  width: 34%;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 22px;
+}
+.product_div .product_price {
+  font-weight: 800;
+  padding-top: 3px;
+}
+.product_div button {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: #1976d2;
+  background-color: transparent;
+  border: 2px solid #1976d2;
+  padding: 15px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  width: 40%;
+  transition: 0.2s ease all !important;
+}
+.active_button {
+  background-color: #1976d2 !important;
+  color: white !important;
+  transition: 0.2s ease all !important;
+}
+
+.loading_div {
+  width: 400%;
+  overflow: hidden;
+  text-align: center;
+}
